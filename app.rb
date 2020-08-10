@@ -3,7 +3,7 @@
 require_relative 'advice'
 require_relative 'framework'
 
-class App < Monroe
+class App < Framework
   def call(env)
     case env['REQUEST_PATH']
     when '/'
